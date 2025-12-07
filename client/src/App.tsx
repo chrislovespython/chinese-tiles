@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Copy, Check, LogOut, User, Send } from 'lucide-react';
 import io from 'socket.io-client';
 import type { Socket } from 'socket.io-client';
@@ -909,7 +909,7 @@ export default function ChineseTilesMultiplayer() {
                     transition-all duration-200
                     ${currentPlayer !== playerSymbol ? 'cursor-not-allowed opacity-50' : 'hover:bg-neutral-50 cursor-pointer'}
                     ${selectedPiece === index ? 'bg-neutral-100 ring-2 ring-neutral-400 ring-inset' : ''}
-                    ${isWinningCell ? '!bg-neutral-800' : ''}
+                    ${isWinningCell ? 'bg-neutral-800!' : ''}
                     ${isInvalid ? 'animate-flash-red' : ''}
                   `}
                 >
@@ -917,7 +917,7 @@ export default function ChineseTilesMultiplayer() {
                     <span className={`
                       text-5xl font-light select-none transition-all duration-200
                       ${cell === 'X' ? 'text-neutral-800' : 'text-neutral-500'}
-                      ${isWinningCell ? '!text-white' : ''}
+                      ${isWinningCell ? 'text-white!' : ''}
                       ${selectedPiece === index ? 'scale-110' : 'scale-100'}
                       ${isAnimating ? 'animate-scale-in' : ''}
                     `}>
