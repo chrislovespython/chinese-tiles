@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^13.0.0"
+  }
+}
