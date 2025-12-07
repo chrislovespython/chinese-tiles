@@ -14,7 +14,7 @@ import type {
 } from './types';
 
 // API Configuration
-const API_URL = 'https://chinese-tiles.onrender.com:3000';
+const API_URL = 'https://chinese-tiles.onrender.com:10000';
 
 export default function ChineseTilesMultiplayer() {
   // Auth state
